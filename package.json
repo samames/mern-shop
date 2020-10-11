@@ -1,0 +1,22 @@
+{
+  "name": "proshop",
+  "version": "1.0.0",
+  "description": "MERN shop app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samames/mern-shop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samames/mern-shop/issues"
+  },
+  "homepage": "https://github.com/samames/mern-shop#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
