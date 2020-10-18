@@ -7,14 +7,15 @@ router.get(
   '/',
   handler(async (req, res) => {
     const products = await Product.find({});
+
     res.json(products);
   })
 );
 
 router.get(
   '/:id',
-  handler((req, res) => {
-    const product = Product.findById(req.params.id);
+  handler(async (req, res) => {
+    const product = await Product.findById(req.params.id);
     if (product) {
       res.json(product);
     } else {
